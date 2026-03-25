@@ -6,14 +6,6 @@ video editing services, portfolio, and client conversion.
 The website is designed with a **modern cinematic UI** focused on helping
 content creators, brands, and businesses grow through high-quality edits.
 
----
-
-## 🚀 Live Website
-
-👉 https://beereilivishal.github.io/beereilivishal.solopayer.io/
-
----
-
 ## 🧠 About the Project
 
 This website is built to:
