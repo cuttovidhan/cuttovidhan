@@ -462,29 +462,4 @@ text-align:center;
 }
 
 }
-/* MOBILE FIX FOR HERO IMAGE */
-@media (max-width: 768px) {
 
-.hero {
-    height: 100vh;
-    background-position: center top;   /* show face properly */
-}
-
-/* Make image less zoomed */
-.hero::before,
-.hero-image {
-    background-size: cover;
-    background-position: center top;
-}
-
-/* TEXT POSITION FIX */
-.hero-content {
-    bottom: 60px;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 36px;
-    line-height: 1.2;
-}
-}
