@@ -462,4 +462,99 @@ text-align:center;
 }
 
 }
+/* =========================
+   MOBILE FULL FIX
+========================= */
+@media (max-width: 768px) {
+
+body {
+    overflow-x: hidden;
+}
+
+/* NAVBAR FIX */
+.nav {
+    padding: 12px 15px;
+}
+
+.nav ul {
+    gap: 12px;
+    font-size: 13px;
+    overflow-x: auto;
+}
+
+/* HERO TEXT FIX */
+.hero-content h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    padding: 0 15px;
+}
+
+/* SECTION COMMON FIX */
+section {
+    padding: 60px 20px !important;
+}
+
+/* HEADINGS */
+h1, h2 {
+    font-size: 32px !important;
+    line-height: 1.3;
+}
+
+/* PARAGRAPH */
+p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* LOGO CENTER FIX */
+.brand img {
+    width: 140px;
+}
+
+/* SERVICES TEXT */
+.services p {
+    font-size: 18px;
+}
+
+/* CLIENT GRID FIX */
+.client-tags {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* VIDEO FIX */
+.video-box {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+/* CERTIFICATION FIX */
+.certificate h2 {
+    font-size: 36px !important;
+}
+
+/* NEWSLETTER INPUT */
+.newsletter input {
+    width: 100%;
+}
+
+.newsletter button {
+    width: 100%;
+}
+
+/* FOOTER FIX */
+.footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+/* REMOVE SIDE SPACES */
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+}
 
