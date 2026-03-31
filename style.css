@@ -244,16 +244,16 @@ margin:0 auto 20px auto;
 }
 
 /* VIDEO */
-.client-video video{
+.client-video iframe{
 width:100%;
 height:380px;
-object-fit:cover;
+border:none;
 display:block;
 }
 
 /* MOBILE */
 @media(max-width:768px){
-.client-video video{
+.client-video iframe{
 height:200px;
 }
 
