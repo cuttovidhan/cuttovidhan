@@ -1,316 +1,28 @@
 /* =========================
-   GLOBAL RESET
-========================= */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Inter, sans-serif;
-background:#0b0b0b;
-color:#e5e5e5;
-line-height:1.6;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-.nav{
-position:fixed;
-top:0;
-width:100%;
-background:#4a4f57;
-z-index:100;
-}
-
-.nav-container{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:12px 20px;
-}
-
-.logo{
-font-weight:600;
-font-size:16px;
-color:#fff;
-}
-
-.nav-links{
-display:flex;
-gap:25px;
-list-style:none;
-}
-
-.nav-links li{
-color:#d0d0d0;
-cursor:pointer;
-}
-
-/* =========================
-   HERO
-========================= */
-.hero{
-height:100vh;
-position:relative;
-}
-
-.hero-bg{
-position:absolute;
-width:100%;
-height:100%;
-background:url("bg_image.jpg.jpeg") center/cover no-repeat;
-}
-
-.overlay{
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.55);
-}
-
-.hero-content{
-position:absolute;
-bottom:100px;
-left:50%;
-transform:translateX(-50%);
-text-align:center;
-width:100%;
-}
-
-.hero-content h1{
-font-size:72px;
-font-weight:400;
-}
-
-/* =========================
-   INTRO
-========================= */
-.intro{
-max-width:900px;
-margin:70px auto;
-text-align:center;
-padding:0 20px;
-}
-
-.intro-line1{
-font-size:22px;
-margin-bottom:20px;
-}
-
-.intro-line2{
-font-size:18px;
-color:#b5b5b5;
-}
-
-/* =========================
-   GRID
-========================= */
-.grid-section{
-max-width:1200px;
-margin:60px auto;
-padding:0 20px;
-}
-
-.grid-container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:25px;
-}
-
-.grid-item{
-height:260px;
-overflow:hidden;
-border-radius:18px;
-}
-
-.grid-item img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-/* =========================
-   CERTIFICATE
-========================= */
-.certificate{
-padding:70px 20px;
-text-align:center;
-}
-
-.cert-heading{
-font-size:40px;
-margin:10px 0;
-}
-
-.cert-text{
-max-width:600px;
-margin:auto;
-color:#ccc;
-}
-
-.cert-dropdown{
-max-width:800px;
-margin:30px auto 0;
-max-height:0;
-overflow:hidden;
-transition:0.6s;
-}
-
-.certificate:hover .cert-dropdown{
-max-height:1000px;
-}
-
-.cert-dropdown img{
-width:100%;
-border-radius:12px;
-}
-
-/* =========================
-   CLIENTS
-========================= */
-.clients{
-max-width:1000px;
-margin:90px auto;
-text-align:center;
-padding:0 20px;
-}
-
-.client-tag{
-color:#f4a623;
-letter-spacing:3px;
-font-size:13px;
-margin-bottom:10px;
-}
-
-.client-heading{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.client-subtext{
-color:#a5a5a5;
-max-width:700px;
-margin:auto;
-margin-bottom:25px;
-}
-
-.client-logos{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:20px;
-margin-bottom:25px;
-}
-
-.client-logos span{
-opacity:0.7;
-}
-
-/* TEXT ABOVE VIDEO */
-.client-video-text{
-font-size:18px;
-margin-bottom:20px;
-max-width:700px;
-margin-left:auto;
-margin-right:auto;
-}
-
-/* VIDEO */
-.client-video{
-margin-top:30px;
-border-radius:20px;
-overflow:hidden;
-position:relative;
-}
-
-/* LINE ABOVE VIDEO */
-.client-video::before{
-content:"";
-display:block;
-width:60px;
-height:2px;
-background:#f4a623;
-margin:0 auto 20px auto;
-}
-
-.client-video video{
-width:100%;
-height:380px;
-object-fit:cover;
-}
-
-/* =========================
-   NEWSLETTER
-========================= */
-.newsletter{
-text-align:center;
-padding:80px 20px;
-}
-
-.newsletter h2{
-font-size:36px;
-}
-
-.form{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:12px;
-margin-top:20px;
-}
-
-.form input,
-.form button{
-width:300px;
-padding:14px;
-border:none;
-border-radius:8px;
-}
-
-.form input{
-background:#d9d9d9;
-}
-
-.form button{
-background:#f4a623;
-border-radius:30px;
-cursor:pointer;
-}
-
-/* =========================
-   FOOTER
-========================= */
-.footer{
-padding:70px 20px;
-background:#000;
-}
-
-.footer-heading{
-text-align:center;
-margin-bottom:40px;
-}
-
-.footer-container{
-display:flex;
-justify-content:space-around;
-flex-wrap:wrap;
-gap:30px;
-}
-
-/* =========================
-   🔥 MOBILE FIX
+   🔥 COMPLETE MOBILE FIX
 ========================= */
 @media(max-width:768px){
 
+/* RESET SPACING */
+section,
+.certificate,
+.clients,
+.newsletter,
+.footer{
+margin:50px 0 !important;
+padding:35px 15px !important;
+}
+
+/* NAV */
 .nav-links{
 display:none;
 }
 
+.nav-container{
+padding:10px 15px;
+}
+
+/* HERO */
 .hero{
 height:auto;
 min-height:70vh;
@@ -321,52 +33,163 @@ bottom:60px;
 }
 
 .hero-content h1{
-font-size:34px;
+font-size:32px;
+line-height:1.2;
+padding:0 10px;
 }
 
-.grid-container{
-grid-template-columns:1fr;
-gap:15px;
-}
-
-.grid-item{
-height:180px;
-}
-
+/* INTRO */
 .intro{
 margin:40px auto;
 }
 
+.intro-line1{
+font-size:18px;
+}
+
+.intro-line2{
+font-size:15px;
+}
+
+/* GRID */
+.grid-container{
+grid-template-columns:1fr;
+gap:12px;
+}
+
+.grid-item{
+height:170px;
+border-radius:12px;
+}
+
+/* =========================
+   CERTIFICATE (STATIC FIX)
+========================= */
+.cert-dropdown{
+max-height:none !important;
+overflow:hidden;
+margin-top:20px;
+}
+
+.certificate:hover .cert-dropdown{
+max-height:none;
+}
+
+/* =========================
+   CLIENTS
+========================= */
 .clients{
 margin:60px auto;
 }
 
 .client-heading{
 font-size:26px;
+line-height:1.3;
+margin-bottom:10px;
 }
 
 .client-subtext{
 font-size:15px;
+margin-bottom:15px;
 }
 
-.client-video video{
-height:200px;
+.client-logos{
+gap:12px;
+margin-bottom:15px;
 }
 
+/* TEXT ABOVE VIDEO */
 .client-video-text{
-font-size:15px;
+font-size:14px;
 padding:0 10px;
+margin-bottom:15px;
+}
+
+/* VIDEO */
+.client-video{
+margin-top:25px;
+border-radius:16px;
+overflow:hidden;
+}
+
+/* LINE BEFORE VIDEO */
+.client-video::before{
+content:"";
+display:block;
+width:50px;
+height:2px;
+background:#f4a623;
+margin:0 auto 15px auto;
+}
+
+/* VIDEO SIZE */
+.client-video video{
+width:100%;
+height:190px;
+object-fit:cover;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+.newsletter h2{
+font-size:24px;
+}
+
+.newsletter p{
+font-size:14px;
+}
+
+/* FORM */
+.form{
+gap:12px;
 }
 
 .form input,
 .form button{
-width:90%;
+width:100%;
+max-width:300px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer{
+padding:50px 15px;
 }
 
 .footer-container{
 flex-direction:column;
 align-items:center;
 text-align:center;
+gap:25px;
+}
+
+/* LOGO FIX */
+.footer-logo{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:8px;
+}
+
+.footer-logo img{
+width:80px;
+height:80px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.footer-logo p{
+font-size:14px;
+letter-spacing:1px;
+}
+
+/* =========================
+   REMOVE EXTRA GAPS
+========================= */
+h1,h2,h3,p{
+margin-bottom:10px;
 }
 
 }
