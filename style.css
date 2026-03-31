@@ -215,15 +215,17 @@ flex-wrap:wrap;
 gap:20px;
 margin-bottom:25px;
 }
-
-/* TEXT ABOVE VIDEO */
+/* VIDEO TEXT */
 .client-video-text{
+text-align:center;
 font-size:18px;
+color:#d0d0d0;
+margin:20px auto;
 max-width:700px;
-margin:0 auto 20px;
+line-height:1.6;
 }
 
-/* VIDEO */
+/* VIDEO BOX */
 .client-video{
 margin-top:30px;
 border-radius:20px;
@@ -231,22 +233,36 @@ overflow:hidden;
 position:relative;
 }
 
-/* LINE BEFORE VIDEO */
+/* LINE ABOVE VIDEO */
 .client-video::before{
 content:"";
 display:block;
 width:60px;
 height:2px;
 background:#f4a623;
-margin:0 auto 20px;
+margin:0 auto 20px auto;
 }
 
+/* VIDEO */
 .client-video video{
 width:100%;
 height:380px;
 object-fit:cover;
 display:block;
 }
+
+/* MOBILE */
+@media(max-width:768px){
+.client-video video{
+height:200px;
+}
+
+.client-video-text{
+font-size:14px;
+padding:0 10px;
+}
+}
+
 
 /* =========================
    NEWSLETTER
@@ -404,21 +420,7 @@ font-size:15px;
 gap:12px;
 }
 
-/* VIDEO */
-.client-video{
-border-radius:16px;
-}
 
-.client-video video{
-height:190px;
-}
-
-/* TEXT */
-.client-video-text{
-font-size:20px;
-padding:0 10px;
-color: yellow;
-}
 
 /* NEWSLETTER */
 .newsletter h2{
