@@ -489,4 +489,154 @@ height:220px;
 }
 
 }
+.client-video-text{
+text-align:center;
+color:#d0d0d0;
+font-size:18px;
+margin-top:30px;
+margin-bottom:20px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+line-height:1.6;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.client-video-text{
+font-size:15px;
+margin-top:20px;
+margin-bottom:15px;
+padding:0 10px;
+}
+}
+
+/* =========================
+   🔥 MOBILE CLEAN FIX
+========================= */
+@media(max-width:768px){
+
+/* 1. REMOVE EXTRA SPACING BETWEEN SECTIONS */
+section,
+.certificate,
+.clients,
+.newsletter,
+.footer{
+margin:60px 0 !important;
+padding:40px 15px !important;
+}
+
+/* 2. FIX HUGE GAP BEFORE VIDEO */
+.client-video{
+margin-top:40px !important;   /* was 200px → too big */
+padding-top:20px;
+}
+
+/* 3. ADD LINE BEFORE VIDEO */
+.client-video::before{
+content:"";
+display:block;
+width:60px;
+height:2px;
+background:#f4a623;
+margin:0 auto 20px auto;
+border-radius:2px;
+}
+
+/* 4. FIX BORDER RADIUS NOT WORKING */
+.client-video{
+border-radius:20px !important;
+overflow:hidden !important;   /* IMPORTANT FIX */
+}
+
+/* 5. VIDEO RESPONSIVE + SPACING */
+.client-video video{
+height:auto !important;
+max-height:220px;
+border-radius:20px;
+}
+
+/* 6. ADD SPACE BETWEEN TEXT AND VIDEO */
+.client-logos{
+margin-bottom:20px;
+}
+
+/* 7. FIX HEADING SPACING */
+.client-heading{
+margin-bottom:10px;
+line-height:1.3;
+}
+
+/* 8. FIX PARAGRAPH SPACING */
+.client-subtext{
+margin-bottom:20px;
+}
+
+/* 9. FIX CERTIFICATE SECTION GAP */
+.certificate{
+padding-bottom:40px;
+}
+
+/* 10. FIX DROPDOWN IMAGE GAP */
+.cert-dropdown{
+margin-top:20px;
+}
+
+/* 11. FIX NEWSLETTER INPUT WIDTH */
+.form input,
+.form button{
+width:100%;
+max-width:320px;
+}
+
+/* 12. REMOVE EXTRA GAP IN FOOTER */
+.footer{
+padding:60px 15px;
+}
+
+/* 13. FIX HERO TEXT SIZE */
+.hero-content h1{
+font-size:34px;
+line-height:1.2;
+}
+
+/* 14. FIX GRID GAP */
+.grid-container{
+gap:15px;
+}
+
+/* 15. FIX GRID IMAGE HEIGHT */
+.grid-item{
+height:180px;
+border-radius:15px;
+}
+
+/* 16. FIX NAV HEIGHT SPACE ISSUE */
+.nav-container{
+padding:10px 15px;
+}
+
+/* 17. REMOVE UNUSED EXTRA HEIGHT */
+.hero{
+height:auto;
+min-height:70vh;
+}
+
+/* 18. FIX TEXT ALIGN COMPACT */
+.intro{
+margin:40px auto;
+}
+
+/* 19. FIX CLIENT LOGO WRAP SPACE */
+.client-logos{
+gap:15px;
+}
+
+/* 20. REMOVE RANDOM BIG MARGINS */
+*{
+box-sizing:border-box;
+}
+
+}
+
 
