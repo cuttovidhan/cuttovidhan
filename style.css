@@ -400,3 +400,13 @@ height:80px;
 }
 
 }
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit;        /* Makes link color match surrounding text */
+}
+
+/* Optional: Add underline back only when hovering */
+a:hover {
+    text-decoration: underline;
+}
+
