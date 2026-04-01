@@ -255,7 +255,8 @@ display:block;
 /* MOBILE */
 @media(max-width:768px){
 .client-video iframe{
-height:200px;
+height:300px;
+width:100%;
 }
 
 .client-video-text{
