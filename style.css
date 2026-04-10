@@ -454,28 +454,38 @@ a:hover {
 /* 🔥 BRAND LOGOS SECTION */
 .brand-logos {
   background: #000;
-  padding: 60px 0;
-  overflow: hidden;
+  padding: 40px 20px;
 }
 
+/* FLEX GRID */
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
+  gap: 40px;
+  flex-wrap: wrap; /* important for mobile */
 }
 
+/* LOGOS */
 .logo-container img {
-  height: 40px;
-  opacity: 0.8;
-  filter: grayscale(100%);
-  transition: all 0.3s ease;
+  height: 35px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
+/* HOVER */
 .logo-container img:hover {
-  opacity: 1;
-  filter: grayscale(0%);
   transform: scale(1.1);
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
+  .logo-container {
+    gap: 25px;
+  }
+
+  .logo-container img {
+    height: 28px;
+  }
 }
 
